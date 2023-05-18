@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최현서05월11일수업</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo">
+                <img src="./png/logo (2).png" alt="">
+            </a>
+
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=FIAIePj4Ivg&t=5s" target="_blank">Lion</a></li>
+            <li><a href="https://www.youtube.com/watch?v=n5WPlC5U9lo&t=449s" target="_blank">Tiger</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dNJh1bISsrI" target="_blank">Leopard</a></li>
+            <li><a href="https://www.youtube.com/watch?v=htGCT3UHq6w" target="_blank">Jaguar</a></li>
+          </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+            <h2>the best hunter<br><span>Big cats</span></h2>
+            <p>It is a carnivore specialized in hunting, skilled in using front feet and quick-witted, so it can be used for attack or tree climbing, and can hide all paper claws except cheetahs.</p>
+            <a href="#">Panthera</a>
+            </div>
+            <div class="imgBox">
+            <img src="./png/lion.png" alt="lion" class="starbucks">
+            </div>
+        </div>
+       <ul class="thumb">
+       <li><img src="./png/htum1.png" alt="" class="thumb1"></li>
+       <li><img src="./png/htum2.png" alt="" class="thumb2"></li>
+       <li><img src="./png/htum3.png" alt="" class="thumb3"></li>
+       <li><img src="./png/htum4.png" alt="" class="thumb4"></li>
+       </ul>
+       <ul class="sci">
+        <li><a href="#"><img src="./imgs/facebook.png" alt=""></a> </li>
+        <li><a href="#"><img src="./imgs/twitter.png" alt=""></a> </li>
+        <li><a href="#"><img src="./imgs/instagram.png" alt=""></a> </li>
+       </ul>
+    </section>
+
+    <script>
+        const thumb1 = document.querySelector('.thumb1');
+        const thumb2 = document.querySelector('.thumb2');
+        const thumb3 = document.querySelector('.thumb3');
+        const thumb4 = document.querySelector('.thumb4');
+        const starbucks = document.querySelector('.starbucks');
+
+        thumb1.addEventListener('click', function() {
+            document.querySelector('.starbucks').src = './png/lion.png';
+            document.querySelector('.circle') .style.background='#75A64A';
+        })
+        thumb2.addEventListener('click', function() {
+            document.querySelector('.starbucks').src = './png/tiger.png';
+            document.querySelector('.circle') .style.background='#4B696C';
+        })
+        thumb3.addEventListener('click', function() {
+            document.querySelector('.starbucks').src = './png/leopard.png';
+            document.querySelector('.circle') .style.background='#245841';
+        })
+        thumb4.addEventListener('click', function() {
+            document.querySelector('.starbucks').src = './png/jaguar.png';
+            document.querySelector('.circle') .style.background='#143231';
+        })
+
+    </script>
+
+</body>
+</html>
